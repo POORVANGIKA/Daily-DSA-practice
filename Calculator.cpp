@@ -6,20 +6,19 @@
 //N-M
 //N×M
 //N÷M
- //(integer division)
 //NmodM
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-	cout <<"enter two numbers N and M"<<endl;
-	int N ,M ;
-	cin>>N>>M;
-	cout<< N <<" + "<< M <<" = " <<N+M<<endl;
-	cout<< N <<" - "<< M <<" = " <<N-M<<endl;
-	cout<< N <<" * "<< M <<" = " <<N*M<<endl;
-	cout<< N <<" / "<< M <<" = " <<N/M<<endl;
-	cout<< N <<" % "<< M <<" = " <<N%M<<endl;
-	
-	
+int main() {
+    int N, M;
+    cin >> N >> M;
+
+    cout << N << " + " << M << " = " << N + M << endl;
+    cout << N << " - " << M << " = " << N - M << endl;
+    cout << N << " * " << M << " = " << N * M << endl;
+    cout << N << " / " << M << " = " << N / M << endl;   // integer division
+    cout << N << " % " << M << " = " << N % M << endl;
+
+    return 0;
 }
