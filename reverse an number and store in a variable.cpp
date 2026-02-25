@@ -2,22 +2,22 @@
 
 //Reverse the digits of N and store the result in a variable.
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
-	long long N;
-	cin>>N;
-	
-	long long result =0;
-	
-	if (N==0){
-		cout<<0;
-	}
-	
-	while(N>0){
-		result=N%10;
-		cout<<result;
-		N=N/10;
-	}
+int main() {
+    long long N;
+    cin >> N;
+
+    long long result = 0;
+
+    while (N > 0) {
+        int digit = N % 10;
+        result = result * 10 + digit;
+        N /= 10;
+    }
+
+    cout << result;
+
+    return 0;
 }
